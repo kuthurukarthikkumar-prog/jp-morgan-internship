@@ -1,0 +1,7 @@
+Suggested executive presentation flow:
+1. Business context and objective
+2. Data and analytical approach
+3. Key findings
+4. Decision options and trade-offs
+5. Recommended action plan
+6. Risks, assumptions, and next steps

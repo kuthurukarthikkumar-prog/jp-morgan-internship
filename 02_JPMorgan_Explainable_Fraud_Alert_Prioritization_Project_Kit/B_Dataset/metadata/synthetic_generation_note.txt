@@ -1,0 +1,1 @@
+Synthetic banking transaction environment generated for fraud detection and alert-prioritization analysis.

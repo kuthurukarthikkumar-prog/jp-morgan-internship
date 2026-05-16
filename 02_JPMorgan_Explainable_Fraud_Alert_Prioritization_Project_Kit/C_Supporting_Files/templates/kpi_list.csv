@@ -1,0 +1,7 @@
+kpi_name,formula_or_logic,business_use
+Fraud precision,True positives / flagged positives,Alert quality
+Fraud recall,True positives / actual frauds,Coverage
+False positive rate,False positives / non-fraud alerts,Operational waste
+Queue hit rate,Confirmed fraud / investigated cases,Investigator productivity
+Average triage score,Mean triage score by queue,Queue severity
+SLA breach rate,Cases beyond SLA / total cases,Operations control

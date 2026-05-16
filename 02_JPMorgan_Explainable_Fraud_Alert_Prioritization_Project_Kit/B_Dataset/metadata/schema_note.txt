@@ -1,0 +1,1 @@
+Primary modeling grain: transaction. Target outcome: fraud_label. Operational filter: alert_generated.
