@@ -1,0 +1,135 @@
+JP Morgan Data Analytics Internship
+
+Explainable Multi-Entity Fraud Intelligence Framework
+
+Threshold Strategy & Alert Prioritization Memo
+
+Prepared by:
+Karthik Kumar Kuthuru
+
+
+
+
+
+
+Threshold Strategy & Alert Prioritization Memo
+
+Executive Summary
+
+Fraud detection systems must balance fraud capture effectiveness with operational investigation capacity. While lower fraud thresholds improve fraud detection coverage, they also increase false-positive alerts and investigator workload. Conversely, higher thresholds reduce operational burden but increase the risk of missed fraudulent activity.
+
+This project evaluates threshold-based alert generation using machine learning fraud probabilities and operational fraud management metrics. The objective is to support efficient investigator triage while maintaining explainable fraud prioritization.
+
+---
+
+Threshold Evaluation
+
+The fraud detection framework was initially evaluated using a default classification threshold of 0.50. Additional threshold testing was performed using a lower threshold of 0.30 to assess the impact on fraud recall and operational workload.
+
+### Default Threshold (0.50)
+
+Benefits:
+
+* Lower alert volume
+* Improved alert precision
+* Reduced investigator workload
+
+Risks:
+
+* Higher probability of missed fraud events
+* Lower fraud recall
+
+Lower Threshold (0.30)
+
+Benefits:
+
+* Improved fraud capture
+* Higher fraud recall
+* Reduced likelihood of missed fraudulent transactions
+
+Risks:
+
+* Increased false-positive alerts
+* Larger investigation queue
+* Higher analyst review effort
+
+---
+
+Operational Impact Analysis
+
+Threshold selection directly influences operational fraud management performance.
+
+Key operational measures include:
+
+* Fraud Recall: Percentage of actual fraud cases successfully detected.
+* Fraud Precision: Percentage of generated alerts that are confirmed fraud.
+* False Positive Rate: Percentage of legitimate transactions incorrectly escalated.
+* Alert Volume: Number of transactions requiring investigation.
+* Queue Hit Rate: Percentage of investigator-reviewed alerts that result in confirmed fraud.
+
+Lower thresholds improve fraud recall but increase investigation workload. Higher thresholds improve operational efficiency but may reduce fraud coverage.
+
+---
+
+Recommended Alert Prioritization Strategy
+
+Rather than relying on a single binary fraud decision, alerts should be prioritized using a risk-tier framework.
+
+High Priority Alerts
+
+Characteristics:
+
+* Highest fraud probability scores
+* Multiple behavioral risk indicators
+* Immediate investigator review
+
+### Medium Priority Alerts
+
+Characteristics:
+
+* Moderate fraud probability scores
+* Partial fraud indicators
+* Standard investigation workflow
+
+Low Priority Alerts
+
+Characteristics:
+
+* Lower fraud probability scores
+* Limited risk indicators
+* Monitoring and periodic review
+
+This approach improves investigator efficiency by directing resources toward the highest-risk transactions first.
+
+---
+
+Governance and Monitoring Considerations
+
+Threshold performance should be reviewed periodically to ensure continued operational effectiveness.
+
+Recommended governance controls include:
+
+* Fraud recall monitoring
+* False-positive trend monitoring
+* Alert volume monitoring
+* Queue efficiency monitoring
+* Model drift assessment
+* Investigator feedback reviews
+
+Threshold adjustments should be documented and aligned with organizational fraud risk appetite and investigation capacity.
+
+---
+
+Recommendation
+
+A threshold near 0.50 provides a balanced starting point for operational fraud management within this project environment. However, threshold selection should remain dynamic and be reviewed regularly as fraud patterns, investigation capacity, and business objectives evolve.
+
+The recommended operating model is explainable risk-based prioritization supported by continuous monitoring, governance oversight, and human investigator review.
+
+---
+
+Conclusion
+
+Effective fraud operations require balancing fraud detection performance with operational scalability. Threshold-based alert prioritization enables investigators to focus on higher-risk activity while maintaining explainability, transparency, and sustainable investigation workloads.
+
+This project demonstrates how threshold management can support operational fraud decision-making while improving fraud investigation efficiency.
