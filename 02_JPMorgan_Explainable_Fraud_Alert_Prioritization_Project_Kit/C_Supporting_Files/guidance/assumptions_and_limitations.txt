@@ -1,2 +1,0 @@
-Document every material assumption used in modeling, KPI logic, and business impact estimation.
-Synthetic data is intentionally realistic but simplified; outputs should be framed as prototypes rather than production decisions.

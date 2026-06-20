@@ -1,5 +1,0 @@
-Recommended dashboard structure:
-1. Executive summary page
-2. Root-cause or drill-down page
-3. Action / recommendation page
-Use business titles, not technical chart names.

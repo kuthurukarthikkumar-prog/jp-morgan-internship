@@ -2,27 +2,26 @@ JP Morgan Data Analytics Internship
 
 Explainable Multi-Entity Fraud Intelligence Framework
 
-Threshold Strategy & Alert Prioritization Memo
+Threshold Strategy & Alert Prioritisation Memo
 
 Prepared by:
 Karthik Kumar Kuthuru
 
+---
 
+# Threshold Strategy & Alert Prioritisation Memo
 
-
-
-
-Threshold Strategy & Alert Prioritization Memo
-
-Executive Summary
+## Executive Summary
 
 Fraud detection systems must balance fraud capture effectiveness with operational investigation capacity. While lower fraud thresholds improve fraud detection coverage, they also increase false-positive alerts and investigator workload. Conversely, higher thresholds reduce operational burden but increase the risk of missed fraudulent activity.
 
-This project evaluates threshold-based alert generation using machine learning fraud probabilities and operational fraud management metrics. The objective is to support efficient investigator triage while maintaining explainable fraud prioritization.
+This project evaluates threshold-based alert generation using machine learning fraud probabilities and operational fraud management metrics. The objective is to support efficient investigator triage while maintaining explainable fraud prioritisation.
+
+The framework extends beyond traditional fraud detection by incorporating risk-based alert prioritisation, operational KPI monitoring, investigator review workflows, service-level agreements (SLAs), and transaction-level explainability through reason codes and recommended actions.
 
 ---
 
-Threshold Evaluation
+## Threshold Evaluation
 
 The fraud detection framework was initially evaluated using a default classification threshold of 0.50. Additional threshold testing was performed using a lower threshold of 0.30 to assess the impact on fraud recall and operational workload.
 
@@ -33,29 +32,33 @@ Benefits:
 * Lower alert volume
 * Improved alert precision
 * Reduced investigator workload
+* More manageable investigation queues
 
 Risks:
 
 * Higher probability of missed fraud events
 * Lower fraud recall
+* Potential under-identification of emerging fraud patterns
 
-Lower Threshold (0.30)
+### Lower Threshold (0.30)
 
 Benefits:
 
 * Improved fraud capture
 * Higher fraud recall
 * Reduced likelihood of missed fraudulent transactions
+* Greater fraud detection sensitivity
 
 Risks:
 
 * Increased false-positive alerts
 * Larger investigation queue
 * Higher analyst review effort
+* Increased operational investigation costs
 
 ---
 
-Operational Impact Analysis
+## Operational Impact Analysis
 
 Threshold selection directly influences operational fraud management performance.
 
@@ -66,21 +69,25 @@ Key operational measures include:
 * False Positive Rate: Percentage of legitimate transactions incorrectly escalated.
 * Alert Volume: Number of transactions requiring investigation.
 * Queue Hit Rate: Percentage of investigator-reviewed alerts that result in confirmed fraud.
+* Average Triage Score: Average risk severity of transactions escalated for review.
 
 Lower thresholds improve fraud recall but increase investigation workload. Higher thresholds improve operational efficiency but may reduce fraud coverage.
 
+The analysis demonstrates that threshold selection should be aligned with fraud-loss tolerance, investigator capacity, and organisational risk appetite rather than model performance metrics alone.
+
 ---
 
-Recommended Alert Prioritization Strategy
+## Recommended Alert Prioritisation Strategy
 
-Rather than relying on a single binary fraud decision, alerts should be prioritized using a risk-tier framework.
+Rather than relying on a single binary fraud decision, alerts should be prioritised using a risk-tier framework.
 
-High Priority Alerts
+### High Priority Alerts
 
 Characteristics:
 
 * Highest fraud probability scores
-* Multiple behavioral risk indicators
+* Multiple behavioural risk indicators
+* Elevated transaction risk exposure
 * Immediate investigator review
 
 ### Medium Priority Alerts
@@ -90,20 +97,30 @@ Characteristics:
 * Moderate fraud probability scores
 * Partial fraud indicators
 * Standard investigation workflow
+* Analyst review required
 
-Low Priority Alerts
+### Low Priority Alerts
 
 Characteristics:
 
 * Lower fraud probability scores
 * Limited risk indicators
 * Monitoring and periodic review
+* Lower operational urgency
 
 This approach improves investigator efficiency by directing resources toward the highest-risk transactions first.
 
+The prioritisation framework is operationalised through service-level review categories and investigator workflows:
+
+* High Risk → Same Day Review
+* Medium Risk → Review Within 24 Hours
+* Low Risk → Weekly Monitoring
+
+This structure aligns investigation effort with transaction risk while supporting operational scalability and queue management.
+
 ---
 
-Governance and Monitoring Considerations
+## Governance and Monitoring Considerations
 
 Threshold performance should be reviewed periodically to ensure continued operational effectiveness.
 
@@ -113,23 +130,32 @@ Recommended governance controls include:
 * False-positive trend monitoring
 * Alert volume monitoring
 * Queue efficiency monitoring
+* Queue hit-rate monitoring
+* SLA adherence monitoring
+* Alert review queue monitoring
 * Model drift assessment
 * Investigator feedback reviews
 
-Threshold adjustments should be documented and aligned with organizational fraud risk appetite and investigation capacity.
+Threshold adjustments should be documented and aligned with organisational fraud risk appetite, investigation capacity, and operational service objectives.
+
+The governance framework should support transparency through transaction-level reason codes, recommended actions, and documented escalation logic. These controls improve explainability, auditability, and investigator consistency.
 
 ---
 
-Recommendation
+## Recommendation
 
 A threshold near 0.50 provides a balanced starting point for operational fraud management within this project environment. However, threshold selection should remain dynamic and be reviewed regularly as fraud patterns, investigation capacity, and business objectives evolve.
 
-The recommended operating model is explainable risk-based prioritization supported by continuous monitoring, governance oversight, and human investigator review.
+The recommended operating model is explainable risk-based prioritisation supported by continuous monitoring, governance oversight, human investigator review, SLA-driven investigation workflows, and transaction-level explainability through reason codes and recommended actions.
+
+This approach enables fraud operations teams to balance fraud detection effectiveness with sustainable investigation workloads while maintaining transparency and operational control.
 
 ---
 
-Conclusion
+## Conclusion
 
-Effective fraud operations require balancing fraud detection performance with operational scalability. Threshold-based alert prioritization enables investigators to focus on higher-risk activity while maintaining explainability, transparency, and sustainable investigation workloads.
+Effective fraud operations require balancing fraud detection performance with operational scalability. Threshold-based alert prioritisation enables investigators to focus on higher-risk activity while maintaining explainability, transparency, and sustainable investigation workloads.
 
-This project demonstrates how threshold management can support operational fraud decision-making while improving fraud investigation efficiency.
+The framework further demonstrates how operational fraud management can be enhanced through structured alert queues, service-level prioritisation, investigator-facing decision support mechanisms, and governance oversight.
+
+This project demonstrates how threshold management can support operational fraud decision-making while improving fraud investigation efficiency, investigator productivity, and risk-based resource allocation.

@@ -1,7 +1,0 @@
-Submission checklist
-- Executive deck completed
-- Technical workbook / notebook completed
-- Dashboard screenshots or live link prepared
-- KPI definitions documented
-- Assumptions and limitations documented
-- Final outputs named professionally

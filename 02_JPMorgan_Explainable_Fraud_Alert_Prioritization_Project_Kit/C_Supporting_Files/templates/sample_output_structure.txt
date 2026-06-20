@@ -1,6 +1,0 @@
-Recommended final submission folder
-01_Executive_Deck/
-02_Business_Report/
-03_Technical_Workbook/
-04_Dashboard/
-05_Appendix/

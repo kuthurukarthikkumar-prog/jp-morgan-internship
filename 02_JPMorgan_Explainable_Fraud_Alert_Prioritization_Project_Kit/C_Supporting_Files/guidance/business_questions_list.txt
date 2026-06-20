@@ -1,4 +1,0 @@
-- What decision should leadership make with this analysis?
-- Which KPI changes are most material and why?
-- Where should intervention happen first?
-- What assumptions or controls could materially change the result?
