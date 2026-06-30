@@ -306,38 +306,28 @@ https://github.com/kuthurukarthikkumar-prog/jp-morgan-internship/tree/main/02_JP
 ---
 
 
-## Repository Structure
+## 📂 Repository Structure
 
-jp-morgan-internship/
+```text
+02_JPMorgan_Explainable_Fraud_Alert_Prioritization_Project_Kit/
 │
 ├── A_Project_Deliverables/
 │   ├── JP_Morgan_Project_Brief.pdf
 │   ├── Business_Report_Explainable_Fraud_Intelligence_Framework.pdf
 │   ├── Executive_Deck_Explainable_Fraud_Intelligence_Framework.pdf
-│   ├── Fraud_Operations_Dashboard.pbix
-│   └── Explainable_Fraud_Intelligence_Framework.ipynb
+│   ├── Video_Presentation_Fraud_Intelligence_Framework.mp4
+│   ├── fraud_intelligence_dashboard.pbix
+│   └── jp_morgan_fraud_intelligence_Analysis.ipynb
 │
 ├── B_Dataset/
 │   ├── raw/
-│   │   ├── transactions.csv
-│   │   ├── customers.csv
-│   │   └── merchants.csv
 │   ├── processed/
-│   │   ├── fraud_intelligence_dataset.csv
-│   │   └── fraud_intelligence_dataset_enhanced.csv
 │   └── metadata/
-│       ├── data_dictionary.csv
-│       ├── schema_note.txt
-│       └── synthetic_generation_note.txt
 │
 ├── C_Supporting_Files/
 │   ├── reports/
-│   │   └── Threshold_Strategy_and_Alert_Prioritisation_Memo.pdf
-│   ├── Project_Framework/
-│   │   ├── evaluation_rubric.csv
-│   │   └── kpi_list.csv
+│   ├── Project_framework/
 │   └── sql/
-│       └── fraud_analysis_queries.sql
 │
 ├── D_Screenshots/
 │   ├── Executive_Overview.png
