@@ -300,6 +300,7 @@ https://canva.link/ksalqr1r1p6cndf
 ## 🔗 Project Repository
 
 **The complete GitHub repository for this project is available here:**
+
 https://github.com/kuthurukarthikkumar-prog/jp-morgan-internship/tree/main/02_JPMorgan_Explainable_Fraud_Alert_Prioritization_Project_Kit
 
 ---
