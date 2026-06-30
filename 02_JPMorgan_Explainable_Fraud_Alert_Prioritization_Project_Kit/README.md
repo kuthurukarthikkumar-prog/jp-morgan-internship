@@ -294,7 +294,20 @@ Potential future developments include:
 
 ---
 
+<<<<<<< HEAD
 ## Project Outcome
+=======
+## 🎥 Presentation Recording
+
+▶️ **Watch the Project Presentation:**  
+https://drive.google.com/your-link-here
+
+**Presentation Recording:**  
+https://drive.google.com/file/d/1bQhgpuK7dry9FTwgXI_U1Lh6u8za3pAj/view
+
+
+## Repository Structure
+>>>>>>> 587d890 (Add presentation recording link)
 
 This project demonstrates how explainable machine learning, behavioural fraud analytics, operational KPIs, governance controls and interactive dashboards can be integrated into a practical fraud intelligence framework.
 
